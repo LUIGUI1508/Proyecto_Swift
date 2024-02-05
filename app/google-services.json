@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307024373948",
+    "project_id": "proyecto-swift-order",
+    "storage_bucket": "proyecto-swift-order.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307024373948:android:ed6746b6dfe7a823e648b9",
+        "android_client_info": {
+          "package_name": "com.example.proyectoswiftorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOM4zFLp6wBKRos0XKS0bUtICKMgZv_FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

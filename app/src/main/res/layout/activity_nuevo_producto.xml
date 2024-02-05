@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoProducto">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="416dp"
+        android:layout_height="850dp"
+        android:foreground="@drawable/pantalla_inicio" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nuevo Producto"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/etSegundoApellido"
+            android:layout_marginTop="8dp"
+            android:hint="Nombre Producto"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#AAA9A9" />
+
+        <EditText
+            android:id="@+id/etPrimerNombre"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_below="@id/textViewCliente"
+            android:layout_marginTop="8dp"
+            android:hint="Presentación"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#AAA9A9" />
+
+        <!-- Segundo Nombre (Opcional) -->
+        <EditText
+            android:id="@+id/etSegundoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/etPrimerNombre"
+            android:layout_marginTop="8dp"
+            android:hint="Precio"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#AAA9A9" />
+
+        <!-- Primer Apellido (Obligatorio) -->
+        <EditText
+            android:id="@+id/etPrimerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/etSegundoNombre"
+            android:layout_marginTop="8dp"
+            android:hint="Descripción"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#AAA9A9" />
+
+
+        <!-- Botón Guardar -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:translationY="30dp">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDireccion"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1B65AD"
+                android:text="GUARDAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:translationX="60dp" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDireccion"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1B65AD"
+                android:shadowColor="#1B65AD"
+                android:text="CANCELAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:translationX="75dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="289dp">
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="284dp"
+                android:orientation="vertical"
+                android:translationX="55dp">
+
+                <Button
+                    android:id="@+id/btnInicio"
+                    android:layout_width="185dp"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/etDireccion"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#CB4335"
+                    android:onClick="Inicio"
+                    android:text="INICIO"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textColorLink="#ffffff"
+                    android:translationX="60dp"
+                    android:translationY="90dp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <!-- Botón Cancelar -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

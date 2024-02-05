@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoCliente">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pantalla_inicio"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nuevo Cliente"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCedula"
+            android:layout_marginTop="8dp"
+            android:hint="ID Cédula"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <EditText
+            android:id="@+id/etPrimerNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCliente"
+            android:layout_marginTop="8dp"
+            android:hint="Primer Nombre"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <!-- Segundo Nombre (Opcional) -->
+        <EditText
+            android:id="@+id/etSegundoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPrimerNombre"
+            android:layout_marginTop="8dp"
+            android:hint="Segundo Nombre (Opcional)"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <!-- Primer Apellido (Obligatorio) -->
+        <EditText
+            android:id="@+id/etPrimerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSegundoNombre"
+            android:layout_marginTop="8dp"
+            android:hint="Primer Apellido"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <!-- Segundo Apellido (Opcional) -->
+        <EditText
+            android:id="@+id/etSegundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPrimerApellido"
+            android:layout_marginTop="8dp"
+            android:hint="Segundo Apellido (Opcional)"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <!-- ID Cédula (Obligatorio) -->
+
+        <!-- ID Dirección (Obligatorio) -->
+        <EditText
+            android:id="@+id/etCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCelular"
+            android:layout_marginTop="8dp"
+            android:hint="Celular"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDireccion"
+            android:layout_marginTop="8dp"
+            android:hint="Dirección"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#6E6C6C" />
+
+        <!-- Botón Guardar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="185dp"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/etDireccion"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1B65AD"
+                    android:text="GUARDAR"
+                    android:textColor="#ffffff"
+                    android:translationX="20dp" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="174dp"
+                    android:layout_height="59dp"
+                    android:layout_below="@id/etDireccion"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1B65AD"
+                    android:text="Cancelar"
+                    android:textColor="#ffffff"
+                    android:translationX="40dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnInicio"
+                android:layout_width="149dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#CB4335"
+                android:fontFamily="sans-serif-black"
+                android:onClick="Inicio"
+                android:text="INICIO"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:translationX="140dp"
+                android:translationY="15sp" />
+        </LinearLayout>
+
+        <!-- Botón Cancelar -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

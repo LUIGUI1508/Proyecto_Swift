@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RevisarPedidos">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pantalla_inicio"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PEDIDOS"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:translationY="50dp">
+
+            <TableRow
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:translationX="25dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnCliente"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Cliente"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:translationX="25dp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnTotal"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:translationX="50dp" />
+            </TableRow>
+
+        </RadioGroup>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:text="Cod. Cliente:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnBuscarPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:backgroundTint="#1B65AD"
+                android:onClick="PDF"
+                android:text="Buscar Pedido"
+                android:textColor="#ffffff"
+                android:translationX="130dp"
+                android:translationY="50dp" />
+
+            <Button
+                android:id="@+id/btnInicio"
+                android:layout_width="208dp"
+                android:layout_height="69dp"
+                android:onClick="Inicio"
+                android:text="INICIO"
+                android:translationX="100dp"
+                android:translationY="170dp"
+                android:backgroundTint="#CB4335"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
